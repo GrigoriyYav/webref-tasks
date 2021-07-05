@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для входа</title>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <form action="/what_u_expect">
+      <h2>Добро пожаловать!</h2>
+      
+      <p><input name="login" placeholder="Логин" class="form-control" /></p>
+      
+      <p>
+        <input
+          type="password"
+          name="pass"
+          placeholder="Пароль"
+          class="form-control"
+        />
+      </p>
+      
+      <div class="flex">
+        <!--Делаем два div рядом, в таком случаии div с текстом будет от верхнего угла и можно менять шрифт */ -->
+        <div class="remember">
+          <input type="checkbox" checked name="remember"/>
+        </div>
+        <div class="remember uppremembertext">Запомнить меня</div>
+      </div>
+      
+      <p><button>Войти</button></p>
+    </form>
+  </body>
+</html>
